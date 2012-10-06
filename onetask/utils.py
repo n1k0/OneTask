@@ -60,5 +60,5 @@ def pprinttable(rows):
         row = rows[0]
         hwidth = len(max(row._fields, key=lambda x: len(x)))
         for i in range(len(row)):
-            lines.append(u"%*s = %s" % (hwidth, row._fields[i], row[i]))
+            lines.append("%*s = %s" % (hwidth, row._fields[i], row[i]))
     return "\n".join(lines)

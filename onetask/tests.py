@@ -34,7 +34,7 @@ class TaskCollectionTest(unittest.TestCase):
 
     def test_get(self):
         tasks = self._load(tasks=[{"title": "task1", "created": 1000}])
-        for x in xrange(2, 100):
+        for x in range(2, 100):
             tasks.add('task%d' % x)
             self.assertEqual(len(tasks.tasks), x)
             self.assertEquals(tasks.get(), 'task1')
